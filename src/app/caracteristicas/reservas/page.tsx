@@ -1,9 +1,9 @@
+'use client';
+
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-
-'use client';
 
 export default function ReservasFeaturePage() {
   const features = [
