@@ -1,21 +1,43 @@
-MIT License
+# **Licencia de Contribución Privada y de Código Abierto**
 
-Copyright (c) 2025 Angel Nerozzi
+## Términos y Condiciones
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+### 1. **Concesión de Derechos**
+El titular de los derechos de autor, **Ángel Nerozzi** y **WaLinz App C.A.**, otorgan a los contribuyentes una licencia **no exclusiva**, **intransferible** y **revocable** para **ver** y **modificar** el código fuente de **WaLinz App** para fines **educacionales** o de **desarrollo personal**. La **visualización** y **modificación** del código es permitida bajo los términos y condiciones establecidos en esta licencia, pero **queda prohibida la distribución, comercialización o replicación**.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+### 2. **Restricciones**
+- **Prohibición de Distribución**: El código fuente y cualquier **derivado** del mismo **no puede ser distribuido, sublicenciado, copiado o replicado** por ningún medio, ya sea público o privado, sin el consentimiento explícito y por escrito de **Ángel Nerozzi** y **WaLinz App C.A.**.
+- **Prohibición de Comercialización**: **No está permitido utilizar, comercializar, ni integrar este código en productos o servicios comerciales** sin la autorización expresa y escrita de **WaLinz App C.A.**.
+- **Uso Privado**: El uso del código para **propósitos privados** (tales como la creación de aplicaciones o servicios internos) requiere **autorización previa**. No se puede utilizar el código de forma privada para ofrecer servicios a terceros sin una licencia adecuada.
+- **Protección de Marca**: Todos los derechos sobre el nombre, la marca, el logo y cualquier otro activo relacionado con **WaLinz App C.A.** son propiedad exclusiva de **Ángel Nerozzi** y **WaLinz App C.A.**. Queda prohibido el uso de la marca sin autorización expresa.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### 3. **Derechos de Autor y Propiedad Intelectual**
+El código de **WaLinz App** y todos los derivados del mismo están **protegidos por derechos de autor**. Los derechos de distribución, modificación, sublicenciamiento y replicación están reservados exclusivamente para **Ángel Nerozzi** y **WaLinz App C.A.**. Cualquier violación de esta licencia, incluidos intentos de distribución no autorizada o uso comercial, puede dar lugar a acciones legales por parte del titular de los derechos de autor.
+
+### 4. **Contribuciones**
+- **Contribuciones al Proyecto**: Al realizar una contribución (por código, documentación u otros medios), el contribuyente garantiza que la contribución es original y que posee todos los derechos necesarios sobre la misma. Además, el contribuyente acepta que cualquier contribución realizada será licenciada bajo los términos de esta licencia.
+- **Revisión y Aprobación**: **WaLinz App C.A.** se reserva el derecho de aceptar, rechazar o modificar cualquier contribución, sin ninguna obligación de dar explicación.
+
+### 5. **Limitación de Responsabilidad**
+El software se distribuye **"tal cual"**, sin garantías de ningún tipo, expresas o implícitas, incluidas, entre otras, las garantías de comerciabilidad o adecuación a un propósito específico. **WaLinz App C.A.** no será responsable de ningún daño directo, indirecto, incidental, especial o consecuente que surja del uso del software.
+
+### 6. **Cumplimiento Legal**
+El uso del código deberá cumplir con todas las leyes aplicables, incluidas las leyes de propiedad intelectual y derechos de autor.
+
+---
+
+## **Terminación de Licencia**
+
+El titular de los derechos de autor se reserva el derecho de terminar esta licencia en cualquier momento, en caso de que se produzca un incumplimiento de los términos establecidos. Al terminarse la licencia, el usuario debe cesar inmediatamente el uso del código y eliminar cualquier copia en su posesión.
+
+---
+
+## **Licencia General**
+
+Este proyecto está licenciado bajo una **Licencia de Contribución Privada y de Código Abierto**. Para más detalles o preguntas sobre el uso comercial o la distribución, comunícate con **WaLinz App C.A.** o **Ángel Nerozzi**.
+
+---
+
+### **Propiedad de la Marca**
+
+Todos los derechos de la marca, logotipo y nombre "WaLinz App" son propiedad exclusiva de **Ángel Nerozzi** y **WaLinz App C.A.**. Cualquier uso no autorizado de la marca, nombre o logotipo está prohibido.
