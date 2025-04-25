@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.75rem;
+
+    /* WaLinz custom colors */
+    --walinz-gray-light: 220 3% 98%;
+    --walinz-gray: 220 3% 95%;
+    --walinz-gray-dark: 220 3% 60%;
+    --walinz-primary: 154 55% 40%;
+    --walinz-primary-light: 154 55% 90%;
+    --walinz-primary-dark: 154 55% 30%;
+    --walinz-secondary: 275 60% 50%;
+    --walinz-secondary-light: 275 60% 90%;
+    --walinz-text: 220 10% 20%;
+    --walinz-text-light: 220 10% 40%;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    /* WaLinz custom colors (dark mode) */
+    --walinz-gray-light: 220 3% 20%;
+    --walinz-gray: 220 3% 15%;
+    --walinz-gray-dark: 220 3% 40%;
+    --walinz-primary: 154 45% 45%;
+    --walinz-primary-light: 154 45% 30%;
+    --walinz-primary-dark: 154 45% 55%;
+    --walinz-secondary: 275 50% 55%;
+    --walinz-secondary-light: 275 50% 25%;
+    --walinz-text: 220 10% 90%;
+    --walinz-text-light: 220 10% 80%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+}
+
+/* Utility classes */
+.bg-walinz-gradient {
+  background: linear-gradient(135deg, hsl(var(--walinz-primary)) 0%, hsl(var(--walinz-secondary)) 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, hsl(var(--walinz-primary)) 0%, hsl(var(--walinz-secondary)) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Animación para el hero */
+@keyframes slide-loop {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-452px);
+  }
+  50% {
+    transform: translateY(-904px);
+  }
+  75% {
+    transform: translateY(-452px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-loop {
+  animation: slide-loop 20s infinite ease-in-out;
+}
+
+/* Font utilities */
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
