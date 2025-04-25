@@ -171,7 +171,7 @@ export function PlanesPrecios() {
                 </ul>
 
                 <a
-                  href={`https://wa.me/584241874360?text=${encodeURIComponent(
+                  href={`https://wa.me/14424474116?text=${encodeURIComponent(
                     `¡Hola! Me interesa el plan ${plan.name} de WaLinz. ${plan.price}$/mes. ¿Podrían darme más información?`
                   )}`}
                   target="_blank"
