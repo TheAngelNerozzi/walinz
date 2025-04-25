@@ -3,6 +3,8 @@ import { Footer } from "@/components/footer";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
+'use client';
+
 export default function ReservasFeaturePage() {
   const features = [
     {
@@ -112,4 +114,30 @@ export default function ReservasFeaturePage() {
                 <div key={index} className="flex">
                   <div className="mr-4 flex-shrink-0">
                     <div className="w-10 h-10 rounded-full bg-[hsl(var(--walinz-primary-light))] flex items-center justify-center">
-                      <svg className="w-6 h-6
+                      <svg className="w-6 h-6 text-[hsl(var(--walinz-primary))]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-1">{benefit.title}</h3>
+                    <p className="text-gray-600">{benefit.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Link href="/precios">
+              <Button size="lg" className="bg-[hsl(var(--walinz-primary))] text-white hover:bg-[hsl(var(--walinz-primary-dark))]">
+                Comienza Ahora
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </main>
+  );
+}
