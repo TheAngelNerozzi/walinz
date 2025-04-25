@@ -1,0 +1,27 @@
+<svg width="260" height="480" viewBox="0 0 260 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo de la tienda online -->
+  <rect width="260" height="480" rx="12" fill="#F9FAFB" />
+  
+  <!-- Barra de navegación -->
+  <rect width="260" height="50" rx="8" fill="#25D366" />
+  <text x="20" y="30" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="white">Mi Tienda Online</text>
+  
+  <!-- Imagen de producto principal -->
+  <rect x="20" y="70" width="220" height="140" rx="8" fill="#E5E7EB" />
+  
+  <!-- Título del producto -->
+  <rect x="20" y="230" width="180" height="20" rx="4" fill="#111827" />
+  
+  <!-- Precio -->
+  <rect x="20" y="260" width="80" height="24" rx="4" fill="#25D366" />
+  <text x="30" y="278" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">$99.99</text>
+  
+  <!-- Descripción -->
+  <rect x="20" y="300" width="220" height="10" rx="2" fill="#9CA3AF" />
+  <rect x="20" y="320" width="200" height="10" rx="2" fill="#9CA3AF" />
+  <rect x="20" y="340" width="180" height="10" rx="2" fill="#9CA3AF" />
+  
+  <!-- Botón de compra -->
+  <rect x="20" y="380" width="220" height="50" rx="8" fill="#25D366" />
+  <text x="75" y="412" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="white">Comprar ahora</text>
+</svg>

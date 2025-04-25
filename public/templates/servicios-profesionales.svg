@@ -1,0 +1,5 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  <path d="M200 80c-22.1 0-40 17.9-40 40v20h-20c-11 0-20 9-20 20v80c0 11 9 20 20 20h120c11 0 20-9 20-20v-80c0-11-9-20-20-20h-20v-20c0-22.1-17.9-40-40-40zm0 140c-11 0-20-9-20-20s9-20 20-20 20 9 20 20-9 20-20 20z" fill="#6b7280"/>
+  <text x="200" y="260" text-anchor="middle" font-family="system-ui" font-size="16" fill="#374151">Servicios Profesionales</text>
+</svg>

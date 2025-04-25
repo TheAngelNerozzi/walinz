@@ -1,0 +1,5 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  <path d="M120 120c0-44.2 35.8-80 80-80s80 35.8 80 80c0 44.2-35.8 80-80 80s-80-35.8-80-80zm80 40c22.1 0 40-17.9 40-40s-17.9-40-40-40-40 17.9-40 40 17.9 40 40 40zm-20-40c0-11 9-20 20-20s20 9 20 20-9 20-20 20-20-9-20-20z" fill="#6b7280"/>
+  <text x="200" y="260" text-anchor="middle" font-family="system-ui" font-size="16" fill="#374151">Panadería y Repostería</text>
+</svg>

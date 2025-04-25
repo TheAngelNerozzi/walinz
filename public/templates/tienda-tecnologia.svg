@@ -1,0 +1,5 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  <path d="M120 80h160c11 0 20 9 20 20v120c0 11-9 20-20 20H120c-11 0-20-9-20-20V100c0-11 9-20 20-20zm80 140c22.1 0 40-17.9 40-40s-17.9-40-40-40-40 17.9-40 40 17.9 40 40 40zm0-60c11 0 20 9 20 20s-9 20-20 20-20-9-20-20 9-20 20-20z" fill="#6b7280"/>
+  <text x="200" y="260" text-anchor="middle" font-family="system-ui" font-size="16" fill="#374151">Tienda de Tecnología</text>
+</svg>
