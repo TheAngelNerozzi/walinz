@@ -206,7 +206,7 @@ export function Footer() {
 
           <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-600 mb-4 md:mb-0">
-              © {currentYear} WaLinz App C.A Todos los derechos reservados. 
+              © {currentYear} WaLinz App. Todos los derechos reservados. 
             </div>
             <div className="flex items-center space-x-2">
               <span className="text-gray-600">Español</span>
