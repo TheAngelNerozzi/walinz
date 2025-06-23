@@ -23,16 +23,16 @@ export default function ComparePlansPage() {
             <tr className="border-b">
               <th className="p-4 text-left font-medium text-gray-600">Precio</th>
               <td className="p-4 text-center">
-                <div className="font-bold">$10/mes</div>
-                <div className="text-sm text-gray-500">$90/año</div>
+                <div className="font-bold">$25/mes</div>
+                <div className="text-sm text-gray-500">$240/año</div>
               </td>
               <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">
-                <div className="font-bold">$20/mes</div>
-                <div className="text-sm text-gray-500">$180/año</div>
+                <div className="font-bold">$45/mes</div>
+                <div className="text-sm text-gray-500">$432/año</div>
               </td>
               <td className="p-4 text-center">
-                <div className="font-bold">$40/mes</div>
-                <div className="text-sm text-gray-500">$360/año</div>
+                <div className="font-bold">$80/mes</div>
+                <div className="text-sm text-gray-500">$768/año</div>
               </td>
             </tr>
           </thead>
