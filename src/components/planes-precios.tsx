@@ -11,8 +11,8 @@ export function PlanesPrecios() {
     {
       name: "Básico",
       description: "Para aficionados",
-      price: billingType === "annual" ? (10 * 0.75).toString() : "10",
-      yearlyPrice: billingType === "annual" ? "90" : (10 * 12 * 0.75).toString(),
+      price: billingType === "annual" ? (25 * 0.8).toString() : "25",
+      yearlyPrice: billingType === "annual" ? (25 * 12 * 0.8).toString() : (25 * 12).toString(),
       features: [
         "Pedidos ilimitados por WhatsApp",
         "Sin comisiones",
@@ -27,8 +27,8 @@ export function PlanesPrecios() {
     {
       name: "Premium",
       description: "Para emprendedores independientes",
-      price: billingType === "annual" ? (20 * 0.75).toString() : "20",
-      yearlyPrice: billingType === "annual" ? "180" : (20 * 12 * 0.75).toString(),
+      price: billingType === "annual" ? (45 * 0.8).toString() : "45",
+      yearlyPrice: billingType === "annual" ? (45 * 12 * 0.8).toString() : (45 * 12).toString(),
       features: [
         "Todo en Basic, además:",
         "Imágenes ilimitadas",
@@ -42,7 +42,7 @@ export function PlanesPrecios() {
         "100 mensajes automáticos de WhatsApp/mes",
         "$0.05 por mensaje adicional",
       ],
-      buttonText: `Obtén un 25% de dscto. el 1er año`,
+      buttonText: `Obtén un 20% de dscto. el 1er año`,
       buttonLink: "/contacto",
       buttonVariant: "default" as const,
       highlight: true,
@@ -51,8 +51,8 @@ export function PlanesPrecios() {
     {
       name: "Business",
       description: "Para equipos",
-      price: billingType === "annual" ? (40 * 0.75).toString() : "40",
-      yearlyPrice: billingType === "annual" ? "360" : (40 * 12 * 0.75).toString(),
+      price: billingType === "annual" ? (80 * 0.8).toString() : "80",
+      yearlyPrice: billingType === "annual" ? (80 * 12 * 0.8).toString() : (80 * 12).toString(),
       features: [
         "Todo en Premium, además:",
         "Eliminación del logo de WaLinz",
@@ -90,7 +90,7 @@ export function PlanesPrecios() {
                   : "text-gray-600"
               }`}
             >
-              Paga anualmente (Ahorra 25%)
+              Paga anualmente (Ahorra 20%)
             </button>
             <button
               onClick={() => setBillingType("monthly")}
