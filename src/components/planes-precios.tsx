@@ -67,7 +67,7 @@ export function PlanesPrecios() {
         "500 mensajes automáticos de WhatsApp/mes",
         "$0.05 por mensaje adicional",
       ],
-      buttonText: `Obtén un 25% de dsct. el 1er año`,
+      buttonText: `Obtén un 20% de dsct. el 1er año`,
       buttonLink: "/contacto",
       buttonVariant: "default" as const,
       badge: "Dominio gratis",
