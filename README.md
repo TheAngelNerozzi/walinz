@@ -2,7 +2,7 @@
 
 ## Descripción
 
-**WaLinz App** es la plataforma de creación de sitios web más grande de toda LATAM, diseñada para facilitar a las empresas la conexión, interacción y conversión de sus leads en clientes de forma rápida, eficiente y personalizada. Integrando de manera innovadora la automatización de mensajes a través de **WhatsApp**, WaLinz App permite que las empresas gestionen la comunicación con sus clientes de manera ágil y efectiva.
+**WaLinz App** es el creador de sitios web para e-commerce innovador mas grande toda LATAM, que integra la automatización de mensajes por WhatsApp, permitiendo a las empresas conectar, interactuar y convertir sus leads en clientes de forma rápida y personalizada.
 
 Con esta herramienta, las empresas pueden:
 
