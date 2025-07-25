@@ -10,39 +10,36 @@ export function PlanesPrecios() {
   const plans = [
     {
       name: "Básico",
-      description: "Para aficionados",
-      price: billingType === "annual" ? (25 * 0.8).toString() : "25",
-      yearlyPrice: billingType === "annual" ? (25 * 12 * 0.8).toString() : (25 * 12).toString(),
+      description: "Para emprendedores individuales",
+      price: billingType === "annual" ? (25 * 10 / 12).toFixed(2) : "25",
+      yearlyPrice: billingType === "annual" ? (25 * 10).toString() : (25 * 12).toString(),
       features: [
+        "Dominio gratis",
+        "Sin comisiones por venta",
+        "Sube hasta 100 productos",
         "Pedidos ilimitados por WhatsApp",
-        "Sin comisiones",
-        "Pagos manuales",
-        "Sube hasta 20 imágenes",
-        "Sin mensajes automáticos de WhatsApp",
+        "Remueve el logo de WaLinz App",
+        "+$10 Por Anexar 100 productos más",
       ],
       buttonText: "Comienza ahora",
       buttonLink: "/contacto",
       buttonVariant: "outline" as const,
+      badge: "Dominio gratis",
     },
     {
       name: "Premium",
-      description: "Para emprendedores independientes",
-      price: billingType === "annual" ? (45 * 0.8).toString() : "45",
-      yearlyPrice: billingType === "annual" ? (45 * 12 * 0.8).toString() : (45 * 12).toString(),
+      description: "Para equipos pequeños",
+      price: billingType === "annual" ? (40 * 10 / 12).toFixed(2) : "40",
+      yearlyPrice: billingType === "annual" ? (40 * 10).toString() : (40 * 12).toString(),
       features: [
         "Todo en Basic, además:",
-        "Imágenes ilimitadas",
-        "Dominio y correo electrónico propios",
-        "Pagos con Pago Móvil, USDT y más",
-        "Comprobante de pago",
-        "Analíticas",
-        "Configuración de facturas y PDF",
-        "Exportación/Importación de CSV",
+        "Dominio gratis",
+        "Sin comisiones por venta",
+        "Sube hasta 200 productos",
         "Soporte de chat en vivo",
-        "100 mensajes automáticos de WhatsApp/mes",
-        "$0.05 por mensaje adicional",
+        "+$10 Por Anexar 100 productos más",
       ],
-      buttonText: `Obtén un 20% de dscto. el 1er año`,
+      buttonText: `Comienza ahora`,
       buttonLink: "/contacto",
       buttonVariant: "default" as const,
       highlight: true,
@@ -50,24 +47,17 @@ export function PlanesPrecios() {
     },
     {
       name: "Business",
-      description: "Para equipos",
-      price: billingType === "annual" ? (80 * 0.8).toString() : "80",
-      yearlyPrice: billingType === "annual" ? (80 * 12 * 0.8).toString() : (80 * 12).toString(),
+      description: "A medida que tu negocio escala",
+      price: billingType === "annual" ? (99 * 10 / 12).toFixed(2) : "99",
+      yearlyPrice: billingType === "annual" ? (99 * 10).toString() : (99 * 12).toString(),
       features: [
-        "Todo en Premium, además:",
-        "Eliminación del logo de WaLinz",
-        "Flujo de trabajo y catálogo de WhatsApp",
-        "Acceso exclusivo para miembros",
-        "5 tiendas",
-        "Recompensas de membresía",
-        "Precios al por mayor",
-        "Webhooks",
-        "Integración de aplicaciones externas",
-        "Soporte prioritario de cuenta",
-        "500 mensajes automáticos de WhatsApp/mes",
-        "$0.05 por mensaje adicional",
+        "Hasta 2,000 productos",
+        "Sin comisiones por venta",
+        "Atención al cliente personalizada vía WhatsApp",
+        "Características de todos los demás planes",
+        "+$10 Por Anexar 100 productos más",
       ],
-      buttonText: `Obtén un 20% de dsct. el 1er año`,
+      buttonText: `Comienza ahora`,
       buttonLink: "/contacto",
       buttonVariant: "default" as const,
       badge: "Dominio gratis",
@@ -90,7 +80,7 @@ export function PlanesPrecios() {
                   : "text-gray-600"
               }`}
             >
-              Paga anualmente (Ahorra 20%)
+              Paga anualmente y obtén 2 meses gratis
             </button>
             <button
               onClick={() => setBillingType("monthly")}
@@ -122,16 +112,11 @@ export function PlanesPrecios() {
                 <div className="mb-6">
                   <div className="flex items-baseline">
                     <span className="text-4xl font-bold">${plan.price}</span>
-                    {plan.price !== "0" && (
-                      <span className="text-gray-500 ml-2">USD/mes</span>
-                    )}
-                  </div>
-                  {plan.yearlyPrice && billingType === "annual" && (
-                    <div className="text-sm text-gray-500 mt-1">${plan.yearlyPrice} / año</div>
-                  )}
-                  {plan.price === "0" && (
-                    <div className="text-sm text-gray-500 mt-1">Pedidos ilimitados por WhatsApp</div>
-                  )}
+                    <span className="text-gray-500 ml-2">USD/mes</span>
+                </div>
+                {billingType === "annual" && (
+                  <div className="text-sm text-gray-500 mt-1">${plan.yearlyPrice} / año</div>
+                )}
                 </div>
 
                 {plan.badge && (
@@ -146,7 +131,7 @@ export function PlanesPrecios() {
                 <ul className="space-y-3 mb-6">
                   {plan.features.map((feature, i) => (
                     <li key={`${plan.name}-feature-${i}`} className="flex text-sm">
-                      {i === 0 && plan.name !== "Básico" ? (
+                      {i === 0 ? (
                         <span className="text-gray-700">{feature}</span>
                       ) : (
                         <>
