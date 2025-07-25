@@ -7,12 +7,12 @@ export default function PlanesPreciosPage() {
       titulo: "Planes disponibles",
       descripcion: "Conoce nuestros diferentes planes y sus características",
       instrucciones: [
-        "Plan Básico - Ideal para comenzar",
-        "Plan Profesional - Para negocios en crecimiento",
-        "Plan Enterprise - Soluciones personalizadas",
+        "Plan Básico - $25 al mes",
+        "Plan Premium - $40 al mes",
+        "Plan Business - $99 al mes",
         "Comparativa de características"
       ],
-      consejos: "Elige el plan que mejor se adapte a tus necesidades actuales, puedes cambiar en cualquier momento."
+      consejos: "Elige el plan que mejor se adapte a tus necesidades actuales, puedes cambiar en cualquier momento. Paga anualmente y obtén 2 meses gratis."
     },
     {
       titulo: "Gestión de suscripción",
@@ -40,7 +40,7 @@ export default function PlanesPreciosPage() {
       titulo: "Características adicionales",
       descripcion: "Explora funciones extra disponibles",
       instrucciones: [
-        "Usuarios adicionales",
+        "Anexar 100 productos más por +$10",
         "Almacenamiento extra",
         "Soporte prioritario",
         "Integraciones premium"
