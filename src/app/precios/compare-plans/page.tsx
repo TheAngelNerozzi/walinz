@@ -16,86 +16,68 @@ export default function ComparePlansPage() {
           <thead>
             <tr className="bg-[hsl(var(--walinz-gray-light))] border-b">
               <th className="p-4 text-left font-medium text-gray-600">Características</th>
-                            <th className="p-4 text-center font-medium text-gray-600">Básico</th>
-              <th className="p-4 text-center font-medium text-gray-600 bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">Premium</th>
-              <th className="p-4 text-center font-medium text-gray-600">Business</th>
+              <th className="p-4 text-center font-medium text-gray-600">Starter</th>
+              <th className="p-4 text-center font-medium text-gray-600 bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">Business</th>
+              <th className="p-4 text-center font-medium text-gray-600">Enterprise</th>
             </tr>
             <tr className="border-b">
               <th className="p-4 text-left font-medium text-gray-600">Precio</th>
-                            <td className="p-4 text-center">
-                <div className="font-bold">$25/mes</div>
-                <div className="text-sm text-gray-500">$250/año</div>
+              <td className="p-4 text-center">
+                <div className="font-bold">$49/mes</div>
+                <div className="text-sm text-gray-500">$490/año</div>
               </td>
               <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">
-                <div className="font-bold">$40/mes</div>
-                <div className="text-sm text-gray-500">$400/año</div>
+                <div className="font-bold">$149/mes</div>
+                <div className="text-sm text-gray-500">$1490/año</div>
               </td>
               <td className="p-4 text-center">
-                <div className="font-bold">$99/mes</div>
-                <div className="text-sm text-gray-500">$990/año</div>
+                <div className="font-bold">Custom</div>
+                <div className="text-sm text-gray-500">Contáctanos para precios</div>
               </td>
             </tr>
           </thead>
           <tbody>
             <tr className="border-b hover:bg-gray-50">
               <td className="p-4 font-medium">Productos</td>
-                            <td className="p-4 text-center">Hasta 100</td>
-              <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">Hasta 200</td>
-              <td className="p-4 text-center">Hasta 2,000</td>
+              <td className="p-4 text-center">Hasta 500</td>
+              <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">Hasta 2,000</td>
+              <td className="p-4 text-center">Ilimitados</td>
             </tr>
             <tr className="border-b hover:bg-gray-50">
               <td className="p-4 font-medium">Dominio gratis</td>
-                            <td className="p-4 text-center">
-                <svg className="h-5 w-5 text-[hsl(var(--walinz-primary))] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-              </td>
-              <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">
-                <svg className="h-5 w-5 text-[hsl(var(--walinz-primary))] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-              </td>
-              <td className="p-4 text-center">
-                <svg className="h-5 w-5 text-[hsl(var(--walinz-primary))] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-              </td>
+              <td className="p-4 text-center"><svg className="h-5 w-5 text-[hsl(var(--walinz-primary))] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg></td>
+              <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]"><svg className="h-5 w-5 text-[hsl(var(--walinz-primary))] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg></td>
+              <td className="p-4 text-center"><svg className="h-5 w-5 text-[hsl(var(--walinz-primary))] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg></td>
             </tr>
             <tr className="border-b hover:bg-gray-50">
               <td className="p-4 font-medium">Pedidos por WhatsApp</td>
-                            <td className="p-4 text-center">Ilimitados</td>
+              <td className="p-4 text-center">Ilimitados</td>
               <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">Ilimitados</td>
               <td className="p-4 text-center">Ilimitados</td>
             </tr>
             <tr className="border-b hover:bg-gray-50">
               <td className="p-4 font-medium">Soporte</td>
-                                          <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">Chat en vivo</td>
-              <td className="p-4 text-center">Personalizado vía WhatsApp</td>
+              <td className="p-4 text-center">VIP por WhatsApp +$29/mes</td>
+              <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">VIP por WhatsApp +$29/mes</td>
+              <td className="p-4 text-center">Incluido + Premium</td>
             </tr>
             <tr className="border-b hover:bg-gray-50">
-              <td className="p-4 font-medium">Remover logo WaLinz</td>
-                            <td className="p-4 text-center">
-                <svg className="h-5 w-5 text-[hsl(var(--walinz-primary))] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-              </td>
-              <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">
-                <svg className="h-5 w-5 text-[hsl(var(--walinz-primary))] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-              </td>
-              <td className="p-4 text-center">
-                <svg className="h-5 w-5 text-[hsl(var(--walinz-primary))] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                </svg>
-              </td>
+              <td className="p-4 font-medium">Remueve el logo de WaLinz App</td>
+              <td className="p-4 text-center">-</td>
+              <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]"><svg className="h-5 w-5 text-[hsl(var(--walinz-primary))] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg></td>
+              <td className="p-4 text-center"><svg className="h-5 w-5 text-[hsl(var(--walinz-primary))] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg></td>
             </tr>
             <tr className="border-b hover:bg-gray-50">
               <td className="p-4 font-medium">Anexar productos adicionales</td>
+              <td className="p-4 text-center">+$15/mes por 100</td>
+              <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">+$15/mes por 100</td>
+              <td className="p-4 text-center">Incluido</td>
+            </tr>
+            <tr className="border-b hover:bg-gray-50">
+              <td className="p-4 font-medium">Features Premium</td>
               <td className="p-4 text-center">-</td>
-              <td className="p-4 text-center">+$10 por 100</td>
-              <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">+$10 por 100</td>
-              <td className="p-4 text-center">+$10 por 100</td>
+              <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">-</td>
+              <td className="p-4 text-center"><svg className="h-5 w-5 text-[hsl(var(--walinz-primary))] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg></td>
             </tr>
           </tbody>
         </table>
