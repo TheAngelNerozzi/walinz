@@ -7,9 +7,9 @@ export default function PlanesPreciosPage() {
       titulo: "Planes disponibles",
       descripcion: "Conoce nuestros diferentes planes y sus características",
       instrucciones: [
-        "Plan Básico - $25 al mes",
-        "Plan Premium - $40 al mes",
-        "Plan Business - $99 al mes",
+        "Plan Starter - $49 al mes",
+        "Plan Business - $149 al mes",
+        "Plan Enterprise - Custom (contáctanos para precios)",
         "Comparativa de características"
       ],
       consejos: "Elige el plan que mejor se adapte a tus necesidades actuales, puedes cambiar en cualquier momento. Paga anualmente y obtén 2 meses gratis."
@@ -118,10 +118,14 @@ export default function PlanesPreciosPage() {
           </div>
 
           <div className="mt-12 bg-white rounded-xl shadow-sm p-8 text-center">
-            <h2 className="text-2xl font-bold mb-4">¿Necesitas ayuda para elegir un plan?</h2>
-            <p className="text-gray-600 mb-6">
-              Nuestro equipo de soporte está disponible para ayudarte a elegir el mejor plan
-            </p>
+            <h2 className="text-2xl font-bold mb-4">Planes disponibles</h2>
+            <p className="mb-4">Ofrecemos tres planes para adaptarnos a tus necesidades:</p>
+            <ul className="list-disc pl-6 mb-6">
+              <li><strong>Starter:</strong> $49 al mes</li>
+              <li><strong>Business:</strong> $149 al mes</li>
+              <li><strong>Enterprise:</strong> Custom (contáctanos para precios)</li>
+            </ul>
+            <p className="mb-4">Si eliges pagar anualmente, se te facturará solo por 10 meses y obtendrás 2 meses gratis (no aplica a Enterprise).</p>
             <Button className="bg-black text-white hover:bg-gray-800">
               Contactar soporte
             </Button>
