@@ -9,17 +9,16 @@ export function PlanesPrecios() {
 
   const plans = [
     {
-      name: "Básico",
+      name: "Starter",
       description: "Para emprendedores individuales",
-      price: billingType === "annual" ? (25 * 10 / 12).toFixed(2) : "25",
-      yearlyPrice: billingType === "annual" ? (25 * 10).toString() : (25 * 12).toString(),
+      price: billingType === "annual" ? (49 * 10).toString() : "49",
       features: [
         "Dominio gratis",
-        "Sin comisiones por venta",
-        "Sube hasta 100 productos",
+        "Sube hasta 50 productos",
         "Pedidos ilimitados por WhatsApp",
-        "Remueve el logo de WaLinz App",
-        "+$10 Por Anexar 100 productos más",
+        "Con el logo de WaLinz App",
+        "Soporte de chat en vivo VIP por WhatsApp +$29/mes",
+        "+$15/mes por anexar 100 productos más",
       ],
       buttonText: "Comienza ahora",
       buttonLink: "/contacto",
@@ -27,17 +26,16 @@ export function PlanesPrecios() {
       badge: "Dominio gratis",
     },
     {
-      name: "Premium",
+      name: "Business",
       description: "Para equipos pequeños",
-      price: billingType === "annual" ? (40 * 10 / 12).toFixed(2) : "40",
-      yearlyPrice: billingType === "annual" ? (40 * 10).toString() : (40 * 12).toString(),
+      price: billingType === "annual" ? (149 * 10).toString() : "149",
       features: [
-        "Todo en Basic, además:",
+        "Todo en Starter, además:",
         "Dominio gratis",
-        "Sin comisiones por venta",
         "Sube hasta 200 productos",
-        "Soporte de chat en vivo",
-        "+$10 Por Anexar 100 productos más",
+        "Remueve el WaLinz App",
+        "Soporte de chat en vivo VIP por WhatsApp +$29/mes",
+        "+$15/mes por anexar 100 productos más",
       ],
       buttonText: `Comienza ahora`,
       buttonLink: "/contacto",
@@ -46,18 +44,15 @@ export function PlanesPrecios() {
       badge: "Dominio gratis",
     },
     {
-      name: "Business",
+      name: "Enterprise",
       description: "A medida que tu negocio escala",
-      price: billingType === "annual" ? (99 * 10 / 12).toFixed(2) : "99",
-      yearlyPrice: billingType === "annual" ? (99 * 10).toString() : (99 * 12).toString(),
+      price: "Custom",
+      customPricing: true,
       features: [
-        "Hasta 2,000 productos",
-        "Sin comisiones por venta",
-        "Atención al cliente personalizada vía WhatsApp",
-        "Características de todos los demás planes",
-        "+$10 Por Anexar 100 productos más",
+        "Incluye lo de los demás planes",
+        "Productos ilimitados + features premium",
       ],
-      buttonText: `Comienza ahora`,
+      buttonText: "Contáctanos",
       buttonLink: "/contacto",
       buttonVariant: "default" as const,
       badge: "Dominio gratis",
@@ -96,89 +91,93 @@ export function PlanesPrecios() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {plans.map((plan, index) => (
-            <div
-              key={plan.name}
-              className={`bg-white rounded-xl shadow-lg overflow-hidden ${
-                plan.highlight ? "ring-2 ring-[hsl(var(--walinz-primary))]" : ""
-              }`}
-            >
-              <div className="p-6">
-                <div className="mb-6">
-                  <h3 className="text-xl font-bold">{plan.name}</h3>
-                  <p className="text-gray-500 text-sm">{plan.description}</p>
-                </div>
-
-                <div className="mb-6">
-                  <div className="flex items-baseline">
-                    <span className="text-4xl font-bold">${plan.price}</span>
-                    <span className="text-gray-500 ml-2">USD/mes</span>
-                </div>
-                {billingType === "annual" && (
-                  <div className="text-sm text-gray-500 mt-1">${plan.yearlyPrice} / año</div>
-                )}
-                </div>
-
-                {plan.badge && (
-                  <div className="mb-4">
-                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[hsl(var(--walinz-primary-light))] text-[hsl(var(--walinz-primary))]">
-                      {plan.badge}
-                    </span>
-                    <p className="text-xs text-gray-500 mt-1">Oferta limitada</p>
+          {plans.map((plan, index) => {
+            const message = plan.customPricing ? `¡Hola! Me interesa el plan ${plan.name} de WaLinz. ¿Podrían darme más información sobre precios personalizados?` : `¡Hola! Me interesa el plan ${plan.name} de WaLinz. ${plan.price}$/${billingType === "annual" ? 'año' : 'mes'}. ¿Podrían darme más información?`;
+            return (
+              <div
+                key={plan.name}
+                className={`bg-white rounded-xl shadow-lg overflow-hidden ${
+                  plan.highlight ? "ring-2 ring-[hsl(var(--walinz-primary))]" : ""
+                }`}
+              >
+                <div className="p-6">
+                  <div className="mb-6">
+                    <h3 className="text-xl font-bold">{plan.name}</h3>
+                    <p className="text-gray-500 text-sm">{plan.description}</p>
                   </div>
-                )}
+                  {plan.customPricing ? (
+                    <div className="mb-6">
+                      <span className="text-4xl font-bold">Custom</span>
+                      <p className="text-gray-500 text-sm mt-1">Contáctanos para precios</p>
+                    </div>
+                  ) : (
+                    <div className="mb-6">
+                      <div className="flex items-baseline">
+                        <span className="text-4xl font-bold">${plan.price}</span>
+                        <span className="text-gray-500 ml-2">{billingType === "annual" ? "USD/año" : "USD/mes"}</span>
+                      </div>
+                    </div>
+                  )}
 
-                <ul className="space-y-3 mb-6">
-                  {plan.features.map((feature, i) => (
-                    <li key={`${plan.name}-feature-${i}`} className="flex text-sm">
-                      {i === 0 ? (
-                        <span className="text-gray-700">{feature}</span>
-                      ) : (
-                        <>
-                          <svg
-                            className="h-5 w-5 text-[hsl(var(--walinz-primary))] mr-2 flex-shrink-0"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M5 13l4 4L19 7"
-                            />
-                          </svg>
+                  {plan.badge && (
+                    <div className="mb-4">
+                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[hsl(var(--walinz-primary-light))] text-[hsl(var(--walinz-primary))]">
+                        {plan.badge}
+                      </span>
+                      <p className="text-xs text-gray-500 mt-1">Oferta limitada</p>
+                    </div>
+                  )}
+
+                  <ul className="space-y-3 mb-6">
+                    {plan.features.map((feature, i) => (
+                      <li key={`${plan.name}-feature-${i}`} className="flex text-sm">
+                        {i === 0 ? (
                           <span className="text-gray-700">{feature}</span>
-                        </>
-                      )}
-                    </li>
-                  ))}
-                </ul>
+                        ) : (
+                          <>
+                            <svg
+                              className="h-5 w-5 text-[hsl(var(--walinz-primary))] mr-2 flex-shrink-0"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M5 13l4 4L19 7"
+                              />
+                            </svg>
+                            <span className="text-gray-700">{feature}</span>
+                          </>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
 
-                <a
-                  href={`https://wa.me/14424474116?text=${encodeURIComponent(
-                    `¡Hola! Me interesa el plan ${plan.name} de WaLinz. ${plan.price}$/mes. ¿Podrían darme más información?`
-                  )}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    className={`w-full ${
-                      plan.buttonVariant === "default"
-                        ? "bg-black text-white hover:bg-gray-800"
-                        : "border-gray-300"
-                    }`}
-                    variant={plan.buttonVariant}
+                  <a
+                    href={`https://wa.me/14424474116?text=${encodeURIComponent(message)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    {plan.buttonText}
-                  </Button>
-                </a>
-                <p className="text-xs text-center text-gray-500 mt-2">
-                  Cancela en cualquier momento
-                </p>
+                    <Button
+                      className={`w-full ${
+                        plan.buttonVariant === "default"
+                          ? "bg-black text-white hover:bg-gray-800"
+                          : "border-gray-300"
+                      }`}
+                      variant={plan.buttonVariant}
+                    >
+                      {plan.buttonText}
+                    </Button>
+                  </a>
+                  <p className="text-xs text-center text-gray-500 mt-2">
+                    Cancela en cualquier momento
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="text-center mt-12">
