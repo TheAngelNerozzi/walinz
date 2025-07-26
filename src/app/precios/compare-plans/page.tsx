@@ -39,8 +39,8 @@ export default function ComparePlansPage() {
           <tbody>
             <tr className="border-b hover:bg-gray-50">
               <td className="p-4 font-medium">Productos</td>
-              <td className="p-4 text-center">Hasta 500</td>
-              <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">Hasta 2,000</td>
+              <td className="p-4 text-center">Hasta 50</td>
+              <td className="p-4 text-center bg-[hsl(var(--walinz-primary-light))] border-x border-[hsl(var(--walinz-primary-light))]">Hasta 200</td>
               <td className="p-4 text-center">Ilimitados</td>
             </tr>
             <tr className="border-b hover:bg-gray-50">
